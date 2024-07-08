@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="stylemp.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="home" id="home-page">
+        <h1>WELCOME TO MY MUSIC PLAYER</h1>
+        <button id="proceed-button">Start Jamming!</button>
+    </div>
+    <div class="player" id="music-player" style="display: none;">
+        <h1>WHAT DO YOU WANT TO LISTEN TO TODAY?</h1>  
+
+        <div class="song-list">
+            <h2>G.O.A.T SONGS</h2>
+            <div class="song-item" data-audio="music_Perfect.mp3" data-image="perfect.jpeg" data-duration="4:23" data-artist="Ed Sheeran">
+                <img src="perfect.jpeg" alt="Song 1">
+                <div>
+                    <p>Perfect</p>
+                    <p class="duration">4:23</p>
+                    <p class="artist">Ed Sheeran</p>
+                </div>
+            </div>
+            <div class="song-item" data-audio="music_despacito.mp3" data-image="despacito.jpg" data-duration="4:41" data-artist="Luis Fonsi">
+                <img src="despacito.jpg" alt="Song 2">
+                <div>
+                    <p>Despacito</p>
+                    <p class="duration">4:41</p>
+                    <p class="artist">Luis Fonsi</p>
+                </div>
+            </div>
+            <div class="song-item" data-audio="wmyb.mp3" data-image="1d.jpeg" data-duration="3:26" data-artist="One Direction">
+                <img src="1d.jpeg" alt="Song 3">
+                <div>
+                    <p>What Makes You Beautiful</p>
+                    <p class="duration">3:26</p>
+                    <p class="artist">ONe Direction</p>
+                </div>
+            </div>
+            <div class="song-item" data-audio="tsh.mp3" data-image="tsh.jpeg" data-duration="5:23" data-artist="Mohit Chauhan">
+                <img src="tsh.jpeg" alt="Song 4">
+                <div>
+                    <p>Song 4</p>
+                    <p class="duration">5:23</p>
+                    <p class="artist">Mohit Chauhan</p>
+                </div>
+            </div>
+           
+            <h2>HOPELESS ROMANTICS</h2>
+            <div class="song-item" data-audio="CL.mp3" data-image="CL.jpEg" data-duration="3:53" data-artist="The Local Train">
+                <img src="CL.jpeg" alt="Song 1">
+                <div>
+                    <p>Choo Lo</p>
+                    <p class="duration">3:53</p>
+                    <p class="artist">The Local Train</p>
+                </div>
+            </div>
+            <div class="song-item" data-audio="th.mp3" data-image="th.jpg" data-duration="5:18" data-artist="Mohit Chauhan">
+                <img src="th.jpg" alt="Song 2">
+                <div>
+                    <p>Tum Ho</p>
+                    <p class="duration">5:18</p>
+                    <p class="artist">Mohit Chauhan</p>
+                </div>
+
+            </div>
+           
+            <h2>CHHAPRI VIBES</h2>
+            <div class="song-item" data-audio="bb.mp3" data-image="bb.jpg" data-duration="3:03" data-artist="Chahat Fateh Ali Khan">
+                <img src="bb.jpg" alt="Song 1">
+                <div>
+                    <p>Bado Badi</p>
+                    <p class="duration">3:03</p>
+                    <p class="artist">Chahat Fateh Ali Khan</p>
+                </div>
+            </div>
+            <div class="song-item" data-audio="atw.mp3" data-image="atw.jpg" data-duration="4:14" data-artist="Rahul Kaliyan">
+                <img src="atw.jpg" alt="Song 2">
+                <div>
+                    <p>Albele Tange Wale</p>
+                    <p class="duration">4:14</p>
+                    <p class="artist">Rahul Kaliyan</p>
+                </div>
+            </div>
+            <button id="back-button" class="back-btn">Home</button>
+        </div>
+        <audio id="audio-player"></audio>
+        <footer>
+        <div class="current-song"></div>
+        <div class="controls">
+            <button id="prev-song">Previous</button>
+            <button id="play-pause">Play</button>
+            <button id="next-song">Next</button>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="timer" id="timer">0:00 / 0:00</div>
+
+        
+    </footer>
+    </div>
+        
+    
+    
+
+    <script src="scriptmp.js"></script>
+</body>
+</html>
